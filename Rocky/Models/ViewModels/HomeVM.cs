@@ -1,0 +1,13 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Data.SqlTypes;
+
+namespace Rocky.Models.ViewModels
+{
+    public class HomeVM
+    {
+        public IEnumerable<Product> Products { get; set; }
+        public IEnumerable<Category> Categories { get; set; }
+
+    }
+}
