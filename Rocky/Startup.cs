@@ -32,7 +32,8 @@ namespace Rocky
                 Options.Cookie.IsEssential = true;
             });
             services.AddControllersWithViews();
-            services.AddDefaultIdentity<IdentityUser>().AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddIdentity<IdentityUser,IdentityRole>().AddDefaultTokenProviders().AddDefaultUI()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
         }
